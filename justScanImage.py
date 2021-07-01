@@ -2,9 +2,6 @@ import time
 from telnetlib import EC
 
 import pytesseract as tess
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 import asyncio
 import requests
 import cloudscraper
@@ -14,12 +11,6 @@ import re
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 from PIL import Image
 import requests
-from selenium import webdriver
-
-# driver_path = "C:\seleniumm\chromedriver"
-# browser = webdriver.Chrome(executable_path=driver_path)
-# browser.maximize_window()
-
 
 def yaziOku(adres,deger):
     #img = Image.open("z1.jpg")
